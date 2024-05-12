@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --StrongCyanShadow: hsl(171, 66%, 39%);
+    --StrongCyanShadow2: hsla(171, 66%, 44%, .5);
+    --LightBlue: hsl(233, 100%, 69%);
+    --LightBlueShadow: hsl(233, 100%, 64%);
+    --LightBlueShadow2: hsl(233, 100%, 69%, .5);
+
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlueDark: hsl(201, 11%, 46%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+    --GrayishBlueLight: hsla(201, 11%, 86%, .25);
+
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--DarkGrayishBlue);
+}
+
+p {
+    color: var(--GrayishBlue);
+    line-height: 1.75em;
+}
+
+
+body {
+    min-height: 100svh;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.box01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3em
+}
+
+
+.box01 p {
+    max-width: 35em;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.download-ios {
+    padding-inline: 2em;
+    padding-block: 1em;
+    background-color: var(--StrongCyan);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px 0px var(--StrongCyanShadow),0px 5px 30px 0px var(--StrongCyanShadow2);
+    cursor: pointer;
+}
+
+.download-mac {
+    padding-inline: 2em;
+    padding-block: 1em;
+    background-color: var(--LightBlue);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px 0px var(--LightBlueShadow),0px 5px 20px 0px var(--LightBlueShadow2);
+    cursor: pointer;
+}
+
+.box02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+
+}
+
+.box02 p {
+    max-width: 35em;
+}
+
+.box03 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10em;
+    margin-top: 3em;
+
+
+}
+
+.computer {
+    position: relative;
+    right: 2em;
+}
+
+.box03-sub {
+    max-width: 25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: start;
+
+}
+
+.box03-sub-topic h3 {
+    padding-bottom: .75em;
+}
+
+.box04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+}
+
+.box-devices {
+    margin-top: 3em;
+}
+
+.box05 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.box06 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.box06-sub {
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.box07 {
+    margin-top: 5em;
+}
+
+.box07-logo {
+    margin: 3em;
+}
+
+.box08 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+
+}
+
+footer {
+    margin-top: 5em;
+    background-color: var(--GrayishBlueLight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 2em;
+
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.footer-logo {
+    width: 8%;
+    height: 8%;
+}
+
+.footer-link {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4em;
+    row-gap: 1.5em;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--GrayishBlueDark);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    color: var(--StrongCyan)
+}
+
+.icon-social {
+    margin: .8em;
+}
+
+.icon-social:hover {
+    filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(368%) hue-rotate(121deg) brightness(95%) contrast(81%);
+
+}
+
+.attribution {
+
+    color: black;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/bg-header-mobile.png);
+
+    }
+
+    main {
+        padding-inline: 1em;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .download-ios,
+    .download-mac {
+        width: 100%;
+    }
+
+
+    .box03 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+
+    }
+
+    .computer {
+        width: 100%;
+        position: static;
+    }
+
+    .box03-sub-topic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .devices {
+        width: 100%;
+    }
+
+    .box06 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .footer-logo {
+        width: 40%;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .attribution {
+        max-width: 15em;
+        padding-bottom: .5em;
+
+    }
+}
